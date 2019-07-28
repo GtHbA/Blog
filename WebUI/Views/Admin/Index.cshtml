@@ -6,6 +6,10 @@
 }
 
 <div class="panel panel-default">
+    <div class="navbar-right">
+        @Html.ActionLink("На главную", "List", "Books")
+    </div>
+
     <div class="panel-heading">
         Список книг
     </div>
@@ -37,7 +41,7 @@
                         @item.BookId
                     </td>
                     <td>
-                        @Html.ActionLink(item.Name, "Edit", new { item.BookId})
+                        @Html.ActionLink(item.Name, "Edit", new { item.BookId })
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.Author)
@@ -56,8 +60,7 @@
             }
 
         </table>
-    </div class="panel-body">
-
+    </div>
     <div class="panel-footer">
         @Html.ActionLink("Добавить", "Create", "Add", new { @class = "btn btn-default" })
     </div>
