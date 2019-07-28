@@ -1,10 +1,10 @@
 ﻿@model Domain.Entities.Cart
 
-<div class="navbar-right hidden-xs">
+@*<div class="navbar-right hidden-xs">
     @Html.ActionLink("Заказать", "Index", "Cart",
     new { returnUrl = Request.Url.PathAndQuery },
     new { @class = "btn btn-default navbar-btn" })
-</div>
+</div>*@
 
 <div class="navbar-right visible-xs">
     <a href=@Url.Action("Index", "Cart", new{returnUrl = Request.Url.PathAndQuery}) class="btn btn-default navbar-btn">
