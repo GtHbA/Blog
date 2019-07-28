@@ -7,6 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUI", "WebUI\WebUI.csproj", "{61300B01-0B91-4856-9BB5-7B2A8EA68F98}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{87551E32-B32E-462B-9DD1-06EF5A032C92}"
+	ProjectSection(SolutionItems) = preProject
+		SolutionItems\CreateTableBooks.txt = SolutionItems\CreateTableBooks.txt
+		SolutionItems\dbo.Books.data.sql = SolutionItems\dbo.Books.data.sql
+		SolutionItems\dbo.Books.sql = SolutionItems\dbo.Books.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
