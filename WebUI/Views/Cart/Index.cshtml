@@ -28,7 +28,7 @@
                     {
                         @Html.Hidden("BookId", line.Book.BookId)
                         @Html.HiddenFor(x => x.ReturnUrl)
-                        <input class="btn btn-sm btn-warning" type="submit" value="Удалить"/>
+                        <input class="btn btn-sm btn-warning" type="submit" value="Удалить" />
                     }
                 </td>
             </tr>
@@ -43,8 +43,13 @@
         </tr>
     </tfoot>
 </table>
-
+<article>
+    @foreach (var line in Model.Cart.Lines)
+    {
+        <article>@line.Book.Article</article>
+    }
+</article>
 <div class="text-center">
     <a class="btn btn-primary" href="@Model.ReturnUrl">Продолжить покупки</a>
-    @Html.ActionLink("Оформить заказ", "Checkout", null, new { @class = "btn btn-primary"})
+    @Html.ActionLink("Оформить заказ", "Checkout", null, new { @class = "btn btn-primary" })
 </div>

@@ -35,5 +35,8 @@ namespace Domain.Entities
         [Required]
         [Range(0.01,double.MaxValue,ErrorMessage = "Пожалуйста, введите положительное значение цены")]
         public decimal Price { get; set; }
+
+        [Display(Name = "Article")]
+        public string Article { get; set; }
     }
 }
